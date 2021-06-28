@@ -1,0 +1,14 @@
+.button-disabled {
+    border: solid 0 2px 0 0 #2ea123;
+    color: #ccc;
+    cursor: not-allowed!important;
+}
+
+.room-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  padding: 10px;
+}

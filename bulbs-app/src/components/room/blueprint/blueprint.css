@@ -1,0 +1,41 @@
+.blueprint-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  border: solid 1px;
+  padding: 10px;
+}
+
+.bulb {
+  background-color: rgb(202, 202, 80);
+}
+
+.lightened {
+  background-color: rgba(202, 202, 80, 0.42);
+}
+
+.wall {
+  background-color: #ccc;
+
+}
+
+.no-light {
+  background-color: #fff;
+}
+
+.grid-row {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+}
+
+.grid-item {
+  height: 40px;
+  -ms-flex: auto;
+  width: 40px;
+  position: relative;
+  box-sizing: border-box;
+  border: solid 1px;
+}

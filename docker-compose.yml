@@ -1,0 +1,29 @@
+version: '3'
+
+services:
+  api:
+    container_name: apibulbs
+    build:
+      context: .
+      dockerfile: Dockerfile-spring
+    volumes:
+      - ./bulbs:/app
+    ports:
+      - "8080"
+    networks:
+      - default
+
+  app:
+    container_name: appbulbs
+    build:
+      context: .
+      dockerfile: Dockerfile-react
+    volumes:
+      - ./bulbs-app:/app
+    ports:
+      - "3000:80"
+    networks:
+      - default
+    depends_on:
+      - api
+

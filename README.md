@@ -1,6 +1,12 @@
 # gc-bulbs
 
 Hello there!
+
+Prerequisites
+- maven
+- docker
+- docker-compose
+
 In order to run this project you have to run the following commands.
 
 Navigate to the root project folder, then execute:

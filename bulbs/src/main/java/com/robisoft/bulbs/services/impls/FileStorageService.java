@@ -58,6 +58,12 @@ public class FileStorageService implements StorageService {
 
     @Override
     public File retrieve(String filename) {
-        return new File(uploadsDir.resolve(filename).toString());
+        File room = new File(uploadsDir.resolve(filename).toString());
+
+        if (!room.exists()) {
+            return null;
+        }
+
+        return room;
     }
 }

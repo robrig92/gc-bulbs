@@ -48,7 +48,7 @@ const Upload = () => {
     <>
       <div className="mt-3 row">
         <div className="col-12 text-center">
-          <h4>Upload a blueprint</h4>
+          <h4>Upload a Room's blueprint</h4>
         </div>
       </div>
       {message.length > 0 &&

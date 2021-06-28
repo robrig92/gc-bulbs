@@ -21,7 +21,7 @@ services:
     volumes:
       - ./bulbs-app:/app
     ports:
-      - "3000:80"
+      - "8000:80"
     networks:
       - default
     depends_on:

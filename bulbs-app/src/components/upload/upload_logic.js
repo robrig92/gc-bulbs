@@ -4,7 +4,7 @@ export const upload = async (file) => {
     const formData = new FormData();
     formData.append('file', file);
 
-    await axios.post('http://localhost:3000/api/blueprints', formData);
+    await axios.post(`${process.env.REACT_APP_API_URL}/blueprints`, formData);
 }
 
 export const validateForm = (file) => {

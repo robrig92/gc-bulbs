@@ -9,6 +9,6 @@ export const fetchSolved = async (setSolved) => {
 }
 
 const fetchBlueprint = async (type, setCollection) => {
-    const response = await axios.get(`${process.env.REACT_APP_API_URL}/blueprints/${type}`);
-  setCollection(response.data.room);
+  const response = await axios.get(`${process.env.REACT_APP_API_URL}/rooms/${type}`);
+  setCollection(response.data.blueprint);
 }

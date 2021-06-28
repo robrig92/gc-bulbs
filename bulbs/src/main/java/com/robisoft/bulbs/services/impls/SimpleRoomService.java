@@ -1,8 +1,8 @@
 package com.robisoft.bulbs.services.impls;
 
-import com.robisoft.bulbs.models.Blueprint;
-import com.robisoft.bulbs.services.BlueprintParser;
-import com.robisoft.bulbs.services.BlueprintService;
+import com.robisoft.bulbs.models.Room;
+import com.robisoft.bulbs.services.RoomParser;
+import com.robisoft.bulbs.services.RoomService;
 import com.robisoft.bulbs.services.BulbDistributionCalculator;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -10,20 +10,20 @@ import org.springframework.stereotype.Service;
 import java.io.File;
 
 @Service
-public class SimpleBlueprintService implements BlueprintService {
+public class SimpleRoomService implements RoomService {
     @Autowired
-    BlueprintParser parser;
+    RoomParser parser;
 
     @Autowired
     BulbDistributionCalculator calculator;
 
     @Override
-    public Blueprint solve(Blueprint blueprint) {
-        return new Blueprint(calculator.solve(blueprint.getRoom()));
+    public Room solve(Room room) {
+        return new Room(calculator.solve(room.getBlueprint()));
     }
 
     @Override
-    public Blueprint parse(File file) {
+    public Room parse(File file) {
         return parser.parse(file);
     }
 }

@@ -15,6 +15,7 @@ Navigate to the root project folder, then execute:
 
 When the jar has been created then you have to run the next command to create the images and containers
 - docker-compose up --build
+
 When the containers are complety mounted (the spring boot's run output will be attached in the terminal screen),
 then you can access to the application by the next url http://localhost:8000/
 

@@ -38,4 +38,8 @@ Note:
 If you want to see the algorithm then go to bulbs/src/main/java/com/robisoft/bulbs/services/impls
 and open the file SimpleBulbDistributionCalculator.java
 
+Note2:
+You will find a TXT as example in the root directory called "test.txt"
+the 1's mean wall and the 0's free ceil.
+
 Regards!
